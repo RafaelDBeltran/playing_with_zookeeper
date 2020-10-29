@@ -53,6 +53,7 @@ def election(zk_client_obj, path_var):
     election.run(lambda : print("Election Completed...!"))
     print(zk_client_obj.get(path_var))
     print(election.contenders())
+
 creat_Path(zk,PATH)
 
 creat_Data(zk, PATH + "/node2","test2")
